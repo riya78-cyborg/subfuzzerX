@@ -1,2 +1,73 @@
-# subfuzzerX
-Cyborg Mass Fuzzer — subfuzzerX is a high-speed reconnaissance engine built to aggressively fuzz multiple subdomains in parallel, uncovering hidden endpoints, leaked files, and exposed secrets with surgical precision.
+#🚀 SubFuzzerX — Cyborg Mass Fuzzer
+SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, red teamers, and OSINT researchers. It takes a list of live subdomains and fuzzes them with a custom wordlist to uncover sensitive files, hidden directories, and potential information disclosures.
+
+🔍 Made with ❤️ by Riya Nair
+
+💡 What It Does
+✅ Takes live subdomains as input
+
+✅ Filters only those responding with HTTP 200/3xx/4xx
+
+✅ Fuzzes each domain with your wordlist (e.g. .git, .env, config.php)
+
+✅ Saves all valid hits into clean output files
+
+📦 Requirements
+Make sure you have the following tools installed:
+
+httpx
+
+ffuf
+
+bash (Linux/macOS terminal)
+
+You can install them with:
+
+bash
+Copy
+Edit
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install github.com/ffuf/ffuf/v2@latest
+⚙️ Usage
+bash
+Copy
+Edit
+chmod +x cyborgfuzz.sh
+./cyborgfuzz.sh -l livesubs.txt -w wordlists.txt
+-l: File containing list of live subdomains (one per line)
+
+-w: Your custom wordlist of sensitive paths
+
+Example:
+
+bash
+Copy
+Edit
+./cyborgfuzz.sh -l subdomains.txt -w wordlists.txt
+📝 Output
+Results are saved automatically:
+
+✅ output1.txt, output2.txt, … → full URL paths with matches
+
+✅ Cleaned HTTP logs in results/
+
+✅ Only URLs with valid responses like 200, 302, 403, etc. are fuzzed
+
+🧠 Example Wordlist Entries
+Your wordlists.txt might look like this:
+
+bash
+Copy
+Edit
+.git
+.git/config
+.env
+backup.zip
+admin/.env
+api/.git
+wp-config.php
+You can modify or expand this wordlist anytime.
+
+📚 Author
+👩‍💻 Riya Nair — Cybersecurity Researcher, Instructor, and Code Reviewer
+Follow for more tools and security content.
