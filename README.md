@@ -3,13 +3,13 @@ SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, r
 
 🔍 Made with ❤️ by Riya Nair
 
-💡 What It Does
+# 💡 What It Does
 ✅ Takes live subdomains as input
 ✅ Filters only those responding with HTTP 200/3xx/4xx
 ✅ Fuzzes each domain with your wordlist (e.g. .git, .env, config.php)
 ✅ Saves all valid hits into clean output files
 
-#📦 Requirements
+# 📦 Requirements
 Make sure you have the following tools installed:
 
 -httpx
@@ -20,7 +20,7 @@ Install via:
 go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install github.com/ffuf/ffuf/v2@latest
 
-#⚙️ Usage
+# ⚙️ Usage
 
 chmod +x cyborgfuzz.sh
 ./cyborgfuzz.sh -l livesubs.txt -w wordlists.txt
@@ -31,13 +31,13 @@ chmod +x cyborgfuzz.sh
 Example:
 ./cyborgfuzz.sh -l subdomains.txt -w wordlists.txt
 
-📝 Output
+# 📝 Output
 Results are saved automatically:
 ✅ output1.txt, output2.txt, … → full URL paths with matches
 ✅ Cleaned HTTP logs in results/
 ✅ Only URLs with valid responses like 200, 302, 403, etc. are fuzzed
 
-🧠 Example Wordlist Entries
+# 🧠 Example Wordlist Entries
 Your wordlists.txt might look like this:
 .git
 .git/config
@@ -48,6 +48,6 @@ api/.git
 wp-config.php
 You can modify or expand this wordlist anytime.
 
-📚 Author
-👩‍💻 Riya Nair — Cybersecurity Researcher, Instructor, and Code Reviewer
+# 📚 Author
+👩‍💻 Riya Nair — Cybersecurity Researcher
 Follow for more tools and security content.
