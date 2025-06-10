@@ -20,7 +20,7 @@ Install via:
 go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install github.com/ffuf/ffuf/v2@latest
 
-# ⚙️ Usage
+⚙️ Usage
 
 chmod +x cyborgfuzz.sh
 ./cyborgfuzz.sh -l livesubs.txt -w wordlists.txt
