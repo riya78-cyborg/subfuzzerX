@@ -1,4 +1,4 @@
-##🚀 SubFuzzerX — Cyborg Mass Fuzzer
+# 🚀 SubFuzzerX — Cyborg Mass Fuzzer
 SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, red teamers, and OSINT researchers. It takes a list of live subdomains and fuzzes them with a custom wordlist to uncover sensitive files, hidden directories, and potential information disclosures.
 
 🔍 Made with ❤️ by Riya Nair
