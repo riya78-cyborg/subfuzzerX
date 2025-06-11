@@ -47,6 +47,7 @@ admin/.env
 api/.git
 wp-config.php
 You can modify or expand this wordlist anytime.
+
 📚 Author
 👩‍💻 Riya Nair — Cybersecurity Researcher
 Follow for more tools and security content.
