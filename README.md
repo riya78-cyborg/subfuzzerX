@@ -26,7 +26,7 @@ go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 
 go install github.com/ffuf/ffuf/v2@latest
 
-#⚙️ Usage
+# ⚙️ Usage
 
 chmod +x cyborgfuzz.sh
 
@@ -39,7 +39,7 @@ chmod +x cyborgfuzz.sh
 Example:
 ./cyborgfuzz.sh -l subdomains.txt -w wordlists.txt
 
-#📝 Output
+# 📝 Output
 Results are saved automatically:
 
 ✅ output1.txt, output2.txt, … → full URL paths with matches
@@ -50,6 +50,6 @@ Results are saved automatically:
 
 Note : You can modify or expand this wordlist anytime or even use any wordlists you prefer. 
 
-📚 Author
+# 📚 Author
 👩‍💻 Riya Nair — Cybersecurity Researcher
 Follow for more tools and security content.
