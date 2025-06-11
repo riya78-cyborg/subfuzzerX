@@ -9,7 +9,7 @@ SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, r
 ✅ Fuzzes each domain with your wordlist (e.g. .git, .env, config.php)
 ✅ Saves all valid hits into clean output files
 
-#📦 Requirements
+# 📦 Requirements
 Make sure you have the following tools installed:
 
 -httpx
