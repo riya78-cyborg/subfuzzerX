@@ -41,6 +41,7 @@ Example:
 
 #📝 Output
 Results are saved automatically:
+
 ✅ output1.txt, output2.txt, … → full URL paths with matches
 
 ✅ Cleaned HTTP logs in results/
