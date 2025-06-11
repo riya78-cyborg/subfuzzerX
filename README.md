@@ -5,8 +5,11 @@ SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, r
 
 # 💡 What It Does
 ✅ Takes live subdomains as input
+
 ✅ Filters only those responding with HTTP 200/3xx/4xx
+
 ✅ Fuzzes each domain with your wordlist (e.g. .git, .env, config.php)
+
 ✅ Saves all valid hits into clean output files
 
 # 📦 Requirements
