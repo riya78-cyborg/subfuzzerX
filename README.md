@@ -3,7 +3,7 @@ SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, r
 
 🔍 Made with ❤️ by Riya Nair
 
-# 💡 What It Does
+# What It Does?
 ✅ Takes live subdomains as input
 
 ✅ Filters only those responding with HTTP 200/3xx/4xx
@@ -12,7 +12,7 @@ SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, r
 
 ✅ Saves all valid hits into clean output files
 
-# 📦 Requirements
+# Requirements!
 Make sure you have the following tools installed:
 
 -httpx
@@ -28,6 +28,8 @@ go install github.com/ffuf/ffuf/v2@latest
 
 # ⚙️ Usage
 
+git clone https://github.com/riya78-cyborg/subfuzzerX/
+
 chmod +x cyborgfuzz.sh
 
 ./cyborgfuzz.sh -l livesubs.txt -w wordlists.txt
@@ -39,7 +41,7 @@ chmod +x cyborgfuzz.sh
 Example:
 ./cyborgfuzz.sh -l subdomains.txt -w wordlists.txt
 
-# 📝 Output
+# Output
 Results are saved automatically:
 
 ✅ output1.txt, output2.txt, … → full URL paths with matches
