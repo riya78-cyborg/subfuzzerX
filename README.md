@@ -16,17 +16,22 @@ SubFuzzerX is a powerful bash-based fuzzing tool built for bug bounty hunters, r
 Make sure you have the following tools installed:
 
 -httpx
+
 -ffuf
+
 -bash (Linux/macOS terminal)
 
 Install via:
 go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+
 go install github.com/ffuf/ffuf/v2@latest
 
 #⚙️ Usage
 
 chmod +x cyborgfuzz.sh
+
 ./cyborgfuzz.sh -l livesubs.txt -w wordlists.txt
+
 -l: File containing list of live subdomains (one per line)
 
 -w: Your custom wordlist of sensitive paths
@@ -37,7 +42,9 @@ Example:
 #📝 Output
 Results are saved automatically:
 ✅ output1.txt, output2.txt, … → full URL paths with matches
+
 ✅ Cleaned HTTP logs in results/
+
 ✅ Only URLs with valid responses like 200, 302, 403, etc. are fuzzed
 
 Note : You can modify or expand this wordlist anytime or even use any wordlists you prefer. 
